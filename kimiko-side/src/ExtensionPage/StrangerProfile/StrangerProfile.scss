@@ -1,0 +1,219 @@
+@import "../../variables.scss";
+
+.Show {
+  opacity: 1;
+  left: 0px !important;
+}
+
+.stratto-enter {
+  left: -300px !important;
+  box-shadow: none;
+}
+.stratto-enter-active {
+  left: 0px !important;
+  transition: 0.4s;
+}
+
+.stratto-exit {
+  left: 0px !important;
+}
+.stratto-exit-active {
+  left: -300px !important;
+  box-shadow: none;
+  transition: 0.4s;
+}
+
+.StrangerProfile {
+  display: flex;
+  position: absolute;
+  opacity: 1;
+  height: 100%;
+  width: 270px;
+  //left: -250px;
+  top: 0%;
+
+  transition: 0.2s ease;
+  background-color: $settings;
+  font-family: $rest-font;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px black;
+  border-radius: 0px $radius $radius 0px;
+  overflow: hidden;
+  z-index: 10;
+  border-right: 5px solid $settings-header;
+
+  .Inputue {
+    font-family: $rest-font;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    user-select: none;
+
+    background-color: $inputText;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: $inputText-hover;
+      }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+
+  .Avataro-Edit {
+    height: 20%;
+    background-color: $settings-header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+
+    .Avataro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 75%;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+        border-radius: $avatarBorder;
+        transition: 0.2s ease;
+        background-color: rgba(206, 37, 37, 0);
+        //border: 2px solid white;
+      }
+    }
+    &:hover {
+      img {
+        box-shadow: 0px 0px 20px $avatarHover;
+      }
+    }
+  }
+
+  .Usere-Infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+
+    .Biosphere {
+      background-color: $settings-middle;
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 100%;
+
+      .Inputue {
+        width: 90%;
+      }
+
+      .Profile-Backcolor {
+        display: flex;
+        width: 90%;
+        height: 20px;
+        background-color: white;
+      }
+    }
+  }
+
+  .Social-Media-Cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    background-color: $settings-middle;
+    overflow-y: auto;
+
+    .Amedia-Social {
+      padding: 10px;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+      //background-color: rgb(67, 81, 160);
+      border-radius: $radius;
+
+      .Ico {
+        width: 20px;
+        object-fit: contain;
+        padding: 5px;
+        user-select: none;
+        background-color: rgb(6, 55, 77);
+        border-radius: $radius;
+        border: 2px solid white;
+      }
+
+      .Inputue {
+        width: 70%;
+        cursor: pointer;
+        text-align: center;
+      }
+
+
+    }
+  }
+
+  .Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1%;
+    background-color: $settings-footer;
+    align-self: flex-end;
+
+    .Button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      font-size: large;
+      color: $header-font-color;
+      background-color: $inputText;
+      width: 70%;
+      height: 70%;
+      border-radius: 10px;
+      margin: 10px;
+      display: none;
+
+      &:hover {
+        background-color: $inputText-hover;
+      }
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background: $header;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $inputText;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $header;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $inputText-hover;
+}

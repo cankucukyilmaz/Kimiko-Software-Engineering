@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("ExtensionPage/fonts/tresdias/Tresdias.woff");
+}
+
+.Ok {
+  background-color: rgb(192, 252, 186) !important;
+}
+
+.NotOk {
+  background-color: rgb(255, 221, 221) !important;
+}
+
+//#####APP#####//
+$appHeight: 10px;
+
+/////////////////
+
+$radius: 10px;
+
+$k1: #01998e;
+$k2: #2c764b;
+$k3: #558b1d;
+$k4: #6e65fc;
+$k5: #2c4fe0;
+$k6: #6589fc;
+$k7: #3901e7;
+$k7:#fad7f8;
+$k8:#f7e6f6;
+$k9 :#8555de;
+
+$y1:#2c764b;
+
+$poster-blue:#A1DCF5;
+$poster-yellow:#EAFC6D;
+$poster-pink:#F6B2B8;
+$poster-black:#363D40;
+
+
+$header-font: "Delius", cursive;
+$rest-font: "Roboto Slab", serif;
+$header-font-color: white;
+$header-panel: rgb(172, 145, 145);
+
+$header-shadow: 0px 5px 20px rgb(0, 0, 0);
+$footer-shadow: 0px -5px 20px rgb(0, 0, 0);
+
+$header: rgb(38, 117, 190);
+$footer: $header; // hsla(185, 100%, 60%, 0);
+$middle: rgba(104, 159, 243, 0.253);
+
+$settings-header: $header;
+$settings-footer: $settings-header;
+$settings-middle: rgba(0, 0, 0, 0.671);
+
+$amesage: rgba(0, 17, 255, 0.233);
+$username: rgb(0, 0, 0);
+
+$inputText: hsl(205, 52%, 76%);
+$inputText-hover: rgb(255, 255, 255);
+$transition: 0.2s ease;
+
+$settings: rgba(0, 0, 0, 0);
+$bio: $middle;
+$social-media: $middle;
+
+$avatar: $header;
+$avatarBorder: 10px;
+$avatarHover: rgb(255, 255, 255);

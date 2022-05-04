@@ -1,0 +1,107 @@
+{
+    "Avatar": "avatar",
+    "Username": "username",
+    "Bio": "bio",
+    "Email": "email",
+    "Social": {
+        "instagram": {
+            "id": "instagram",
+            "profileLink": "https://www.instagram.com/",
+            "backColor":"#c32aa3"
+        },
+        "facebook": {
+            "id": "facebook",
+            "profileLink":"https://www.facebook.com/",
+            "backColor":"#1877f2"
+        },
+        "twitter": {
+            "id": "twitter",
+            "profileLink":"https://twitter.com/",
+            "backColor":"#1da1f2"
+        },
+        "spotify": {
+            "id": "spotify",
+            "profileLink":"https://open.spotify.com/user/",
+            "backColor":"#1ed760"
+        },
+        "pinterest": {
+            "id": "pinterest",
+            "backColor":"#bd081c"
+        },
+        "reddit": {
+            "id": "reddit",
+            "backColor":"#ff4500"
+        },
+        "twitch": {
+            "id": "twitch",
+            "backColor":"#9146ff"
+        },
+        "tiktok":{
+            "id":"tiktok",
+            "backColor":"#010101"
+        },
+        "skype": {
+            "id": "skype",
+            "backColor":"#00aff0"
+        },
+        "soundcloud": {
+            "id": "soundcloud",
+            "backColor":"#ff5500"
+        },
+        "snapchat": {
+            "id": "snapchat",
+            "backColor":"#fffc00"
+        },
+        "tumblr": {
+            "id": "tumblr",
+            "backColor":"#35465d"
+        },
+        "telegram": {
+            "id": "telegram",
+            "backColor":"#0088cc"
+        },
+        "whatsapp":{
+            "id":"whatsapp",
+            "backColor":"#25d366"
+        },
+        "discord": {
+            "id": "discord",
+            "backColor":"#7289da"
+        },
+        "steam":{
+            "id":"steam",
+            "backColor":"#171A21"
+        },
+        "apple": {
+            "id": "apple",
+            "backColor":"#a6b1b7"   
+        },
+        "bitcoin": {
+            "id": "bitcoin",
+            "backColor":"#f7931a"
+        },
+        "medium": {
+            "id": "medium",
+            "backColor":"#02b875"
+        },
+        "flickr": {
+            "id": "flickr",
+            "backColor":"#f40083"
+        },
+        "foursquare": {
+            "id": "foursquare",
+            "backColor":"#f94877"
+        },
+        "github": {
+            "id": "github",
+            "backColor":"#4078c0"
+        },
+        "imdb": {
+            "id": "imdb"
+        },
+        "linkedin": {
+            "id": "linkedin",
+            "backColor":"#0a66c2"
+        }
+    }
+}

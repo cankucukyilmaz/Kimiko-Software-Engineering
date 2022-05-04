@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import "../variables.scss";
+
+body {
+  margin: 0px;
+  border: 5px solid black;
+}
+
+.Context-Menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  //height: 100px;
+  //width: 100px;
+  background-color: rgb(127, 155, 231);
+  border-radius: 4px;
+  padding: 2px;
+  z-index: 100;
+  user-select: none;
+
+  .ContMenuItem {
+    background-color: rgb(245, 174, 174);
+    padding: 2px;
+    border-radius: inherit;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(243, 124, 124);
+    }
+  }
+}
+
+.fontAwesome {
+  font-family: "Helvetica", FontAwesome, sans-serif !important;
+}
+
+.App {
+  background-color: rgba(255, 255, 255, 0);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  border: none;
+  font-family: $rest-font;
+  transition: none;
+  min-width: none;
+  overflow: hidden;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+
+  .Header {
+    background-color: $header;
+    height: 7%;
+    width: 100%;
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+    transition: 1s ease;
+
+    box-shadow: $header-shadow;
+
+    .Header-Heading {
+      font-size: 35px;
+      font-family: $header-font;
+      font-weight: 500;
+      letter-spacing: 25px;
+      color: $header-font-color;
+
+      transition: 1s ease;
+    }
+
+    &:hover {
+      background-color: purple !important;
+      .Header-Heading {
+        text-shadow: 0px 0px 10px white;
+        letter-spacing: 0px;
+      }
+    }
+  }
+
+  .MesagonCont {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    transition: 0.2s ease;
+    padding: 10px 0px 10px 0px;
+    box-sizing: content-box;
+    background-color: $middle;
+    display: flex;
+    flex-direction: column;
+    //align-items: flex-start;
+    background-color: $middle;
+
+    .Amesagos {
+      display: flex;
+      overflow-x: auto;
+
+      .AmesagoWrapper {
+        margin: 2px;
+        font-family: $rest-font;
+        font-size: medium;
+        user-select: none;
+        background-color: $amesage;
+        border-radius: $radius;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        transition: 0.2s ease;
+        overflow-x: auto;
+
+        .Avataro {
+          //min-width: 10%;
+          transition: 0.2s ease;
+          border-radius: $radius;
+          display: flex;
+
+          svg {
+            margin-left: 5px;
+            margin-right: 5px;
+            align-self: center;
+            justify-self: center;
+          }
+
+          img {
+            background-color: transparent;
+            object-fit: cover;
+            width: 40px;
+            max-height: 80px;
+            transition: 0.2s ease;
+            border-radius: $radius;
+            &:hover {
+              width: 150px;
+              max-height: 200px;
+            }
+          }
+        }
+
+        .Mesago {
+          display: flex;
+          color: rgb(0, 0, 0);
+          padding: 0px;
+          padding: 5px;
+          padding-right: 10px;
+          padding-left: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          overflow-x: auto;
+
+          .Username {
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 100%;
+            font-size: small;
+            color: $username;
+            user-select: none;
+            cursor: pointer;
+            transition: 0.2s ease;
+            margin-bottom: 4px;
+
+            &:hover {
+              letter-spacing: 5px;
+            }
+          }
+
+          .TheMessage {
+            line-height: 100%;
+            font-size: large;
+            overflow-wrap: anywhere;
+            white-space: pre-wrap;
+            margin-bottom: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .InputueCont {
+    background-color: $footer;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: $footer-shadow;
+    z-index: 1;
+
+    .TextInput {
+      background-color: $inputText;
+      width: 80%;
+      font-size: large;
+      border: 1px solid black;
+      font-family: $rest-font;
+      border-radius: 10px;
+      padding: 6px;
+      transition: 0.5s ease;
+      outline: none;
+      border: none;
+
+      &:hover {
+        background-color: $inputText-hover;
+      }
+
+      &:focus {
+      }
+    }
+
+    .Online-Counter {
+      background-color: $inputText;
+      font-size: large;
+      border-radius: 10px;
+      padding: 3px;
+      width: 5%;
+      text-align: center;
+      user-select: none;
+    }
+  }
+
+  $scroll-back: $inputText;
+  $scroll-corner: hsla(188, 100%, 71%, 1);
+  $scroll-track: $middle;
+  $scroll-thumb: $amesage;
+  $scroll-thumb-hover: $inputText-hover;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+    background: $scroll-back;
+    display: none;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: $scroll-corner;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $scroll-track;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $scroll-thumb;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $scroll-thumb-hover;
+  }
+}

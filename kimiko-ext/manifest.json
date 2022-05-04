@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "short_name": "Kimiko",
+  "name": "Here is Kimiko!",
+  "action": {
+    "default_title": "Kimiko"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content/jquery-3.6.0.min.js",
+        "content/content.js"
+      ],
+      "css": [
+        "content/frame.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_matches":[
+        "*://localhost/*",
+        "*://127.0.0.1/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/content.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "extension_ids": [
+        "dgieeaibpglfbhcnbkcohceboddijpgn"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' ;object-src 'self'"
+  }
+}
