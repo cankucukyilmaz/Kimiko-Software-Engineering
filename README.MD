@@ -1,8 +1,8 @@
 # Kimiko
 
-This is a web app project developed for Sabanci University CS308 Course
+A web app project for the "Software Engineering" course.
 
-# Used Technologies
+# Technology
 
 - NodeJS
 - ReactJS
